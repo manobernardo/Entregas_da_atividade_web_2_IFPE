@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Consumindo API</h1>
+    <h2>Como resposta da atividade proposta segue a entrega usando uma api futebol
+        ligando o tema da 1ª atividade, onde mostra as informações
+        de todos os jogos da ultima Copa do Mundo em 2018
+    </h2>
+    <h4>P.S.: O nosso tema da primeira atividade foi Eventos</h4>
+
+    <div id="jogos"></div>
+    <script>
+        axios('https://app.sportdataapi.com/api/v1/soccer/matches?apikey=0e0b7b80-7885-11ed-aa3c-69b1790fa5a3&season_id=1193')
+            .then(function (response) {
+                
+                lista = document.createElement('ul')
+
+                for (const placar of response.data.data) {
+                    time1 = document.createElement('li');
+                    content = document.createTextNode
+                    ('Data: '+placar.match_start +' => Rodada: '+' - '+placar.round.name +' - '+ placar.home_team.name+' '+placar.stats.ft_score+' '+placar.away_team.name);
+                    time1.appendChild(content);
+                    lista.appendChild(time1);
+                    console.log(placar);
+                    
+                }
+                document.getElementById('jogos').appendChild(lista);
+                
+            })
+
+
+
+        
+    </script>
+</body>
+
+</html>
