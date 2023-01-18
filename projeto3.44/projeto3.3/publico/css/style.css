@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+header{
+    background-color: slategrey;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+main{
+    padding: 30px 50px; 
+}
+
+.card{
+    background-color: beige;
+    border: 1px solid#ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.input{
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid#aaa;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+button{
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: slategrey;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all ease 0.6ms;
+
+}
+
+button:hover{
+    background-color: rgb(59, 70, 80);
+}
+
+.tabela{
+    margin-top: 15px;
+
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid#aaa;
+    width: 100%;
+}
+
+table th{
+    background-color: rgb(225, 215, 215);
+   
+}
+table th td{
+    
+    padding: 1px 5px;
+    text-align: left;
+}
+table td img{
+    width: 25px;
+}
+.center{
+    text-align: center;
+}
+

@@ -1,0 +1,41 @@
+<header>
+        <h1>Eventos</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Editar eventos</h2>
+
+        </div>
+        <div class="card">
+            <form action="/resuleditarUsuario" method="post">
+
+                <div class="input">
+                    
+                    <input type="hidden" id="id" name="id" value="{{id}}">
+
+                </div>
+
+                <div class="input">
+                    <label for="">Nome</label>
+                    <input type="text" id="nome" name="nomes" placeholder="Informe usuario" value="{{nomes}}">
+
+                </div>
+
+                <div class="input">
+                    <label for="">E-mail</label>
+                    <input type="text" id="email" name="emails" placeholder="Informe E-mail" value="{{emails}}">
+
+                </div>
+
+                <div class="input">
+                    <label for="">Senha</label>
+                    <input type="password" id="senha" name="senhas" placeholder="Informe senha" value="{{senhas}}">
+
+                </div>                
+
+
+                
+                <button type="submit">Atualizar</button>
+                
+            </form>
+        </div>

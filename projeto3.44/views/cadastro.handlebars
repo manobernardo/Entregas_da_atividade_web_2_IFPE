@@ -1,0 +1,33 @@
+ <header>
+        <h1>Eventos</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Cadastar eventos da cidade</h2>
+
+        </div>
+        <div class="card">
+            <form action="resulEventos" method="post">
+
+
+                <div class="input">
+                    <label for="">Evento</label>
+                    <input type="text" id="evento" name="eventos" placeholder="Nome do evento">
+
+                </div>
+
+                <div class="input">
+                    <label for="">Data</label>
+                    <input type="date" id="data" name="datas" placeholder="Data do evento">
+
+                </div>
+
+                <div class="input">
+                    <label for="">Endereço</label>
+                    <input type="text" id="endereco" name="enderecos" placeholder="Endereço do evento">
+
+                </div>
+                <button type="submit">Cadastrar</button>
+                <button type="button" onclick="novoEventos.redirecionar3()">Voltar</button>
+            </form>
+        </div>

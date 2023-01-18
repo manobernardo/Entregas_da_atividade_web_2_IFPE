@@ -1,0 +1,40 @@
+<header>
+        <h1>Eventos</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Busca de eventos da cidade</h2>
+
+        </div>
+     <div class="tabela">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Evento</th>
+                    <th>Data</th>
+                    <th>Endereço</th>
+                    <th class="center">Ações</th>
+                </thead>
+
+            {{#data}}
+                <thead>
+                    <th class="center">{{id}}</th>
+                    <th>{{eventos}}</th>
+                    <th>{{datas}}</th>
+                    <th>{{enderecos}}</th>
+                    <th class="center">
+                        <a href="editar/{{id}}"><img src="/img/edit.jpg"></a>
+                        <a href="deletar/{{id}}"><img src="/img/delete.svg"></a>
+                    </th>
+                </thead>
+            {{/data}}
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+            <hr>
+            <button type="button" onclick="novoEventos.redirecionar3()">Voltar</button>
+        </div>
+    
+    </main>    
+       

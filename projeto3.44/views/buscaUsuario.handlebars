@@ -1,0 +1,38 @@
+<header>
+        <h1>Eventos</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Busca de Usuarios</h2>
+
+        </div>
+     <div class="tabela">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Usuario</th>
+                    <th>E-mail</th>
+                    <th class="center">Ações</th>
+                </thead>
+
+            {{#nomess}}
+                <thead>
+                    <th class="center">{{id}}</th>
+                    <th>{{nomes}}</th>
+                    <th>{{emails}}</th>
+                    
+                    <th class="center">
+                        <a href="editarUsuario/{{id}}"><img src="/img/edit.jpg"></a>
+                        <a href="deletarUsuario/{{id}}"><img src="/img/delete.svg"></a>
+                    </th>
+                </thead>
+            {{/nomess}}
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+            <hr>
+            <button type="button" onclick="novoEventos.redirecionar3()">Voltar</button>
+        </div>
+    
+    </main>    
